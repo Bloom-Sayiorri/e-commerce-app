@@ -1,0 +1,36 @@
+.header {
+    background-color: darkblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    height: 50px;
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+}
+
+.nav {
+    display: flex;
+    gap: 10px;
+    /* margin-left: auto; */
+}
+
+.links {
+    color: white;
+    text-decoration: none;
+}
+
+.icons {
+    display: flex;
+    gap: 5px;
+    /* margin-left: 20px; */
+    border: solid 1px white;
+    border-radius: 50px;
+    padding: 5px;
+    background-color: inherit;
+}
