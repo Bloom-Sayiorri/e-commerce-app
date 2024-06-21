@@ -1,13 +1,15 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import '../styles/navbar.css';
 import { FaBars, FaUser } from 'react-icons/fa6';
 
 const Navbar = () => {
 
-  const handleClick= () => {
-    console.log("clicked");
-  };
+  const navigate = useNavigate();
+
+  // const handleClick= () => {
+  //   console.log("clicked");
+  // };
 
   return (
     <header className='header'>
@@ -22,8 +24,8 @@ const Navbar = () => {
             <NavLink to='/about' className='links'>About</NavLink>
         </nav>
         <div className="icons"> 
-          <FaBars className="menu" onClick={handleClick}/>
-          <FaUser  className="avatar" onClick={handleClick}/>
+          <FaBars className="menu" onClick={() => {navigate('/menu')}}/>
+          <FaUser  className="avatar" onClick={() => {navigate('/profile')}}/>
         </div>
     </header>
   )
