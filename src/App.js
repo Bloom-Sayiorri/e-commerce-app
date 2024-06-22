@@ -10,6 +10,7 @@ import Menu from './pages/Menu';
 
 
 function App() {
+
   return (
     <BrowserRouter>
       <Navbar />
