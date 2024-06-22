@@ -7,6 +7,7 @@ import Cart from './pages/Cart';
 import About from './pages/About';
 import Profile from './pages/Profile';
 import Menu from './pages/Menu';
+import Form from './pages/Form';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/" element={<Home/>}/>
           <Route exact path="/products" element={<Products />}/>
           <Route exact path="/cart" element={<Cart/>}/>
+          <Route exact path="/form" element={<Form/>}/>
           <Route exact path="/about" element={<About />}/>
           <Route exact path="/profile" element={<Profile/>}/>
           <Route exact path="/menu" element={<Menu/>}/>
