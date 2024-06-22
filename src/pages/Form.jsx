@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/form.css'
 
 const Form = () => {
 
@@ -9,6 +10,7 @@ const Form = () => {
 
   return (
     <div className='container'>
+      <h1>Products Form</h1>
       <form className='form' onSubmit={handleSubmit}>
         <label>
           Image:

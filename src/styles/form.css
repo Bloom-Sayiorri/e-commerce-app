@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    /* font-size: larger; */
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+input {
+    width: 50%;
+}
