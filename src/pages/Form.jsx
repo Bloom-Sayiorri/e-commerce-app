@@ -94,6 +94,13 @@ const Form = () => {
           />
         </label>
 
+        <div className='toggler'>
+          <p className='toggle-text'>Get Newsletter?</p>
+          <div className='toggle-container'>
+            <input className='toggle-btn'/>
+          </div>
+        </div>
+
         <button type="submit">Submit</button>
       </form>
     </div>

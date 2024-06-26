@@ -14,3 +14,27 @@
 input {
     width: 50%;
 }
+
+.toggler {
+    display: flex;
+    gap: 7px;
+}
+
+.toggle-text {
+
+}
+
+.toggle-container {
+    width: 30px;
+    background-color: rgb(237, 235, 235);
+    border-radius: 30%;
+    border: solid 1px blue;
+
+}
+
+.toggle-btn {
+    background-color: rgb(64, 64, 243);
+    width: 30px;
+    height: 7px;
+    border-radius: 50%px;
+}
