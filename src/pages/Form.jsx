@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/form.css'
+import styles from '../styles/form.module.css'
 
 const Form = () => {
 
@@ -9,15 +9,15 @@ const Form = () => {
   };
 
   return (
-    <div className='container'>
+    <div className={styles.container}>
       <h1>Products Form</h1>
-      <form className='form' onSubmit={handleSubmit}>
+      <form className={styles.form} onSubmit={handleSubmit}>
         <label>
           Image:
           <input 
             type='text'
             name='image'
-            className='image'
+            className={styles.image}
             onChange={() => {}}
           />
         </label>
@@ -26,7 +26,7 @@ const Form = () => {
           <input 
             type='text'
             name='name'
-            className='name'
+            className={styles.name}
             onChange={() => {}}
           />
         </label>
@@ -35,7 +35,7 @@ const Form = () => {
           <input 
             type='number'
             name='price'
-            className='price'
+            className={styles.price}
             onChange={() => {}}
           />
         </label>
@@ -44,7 +44,7 @@ const Form = () => {
           <input 
             type='text'
             name='description'
-            className='description'
+            className={styles.description}
             onChange={() => {}}
           />
         </label>
@@ -53,7 +53,7 @@ const Form = () => {
           <input 
             type='text'
             name='category'
-            className='category'
+            className={styles.category}
             onChange={() => {}}
           />
         </label>
@@ -62,7 +62,7 @@ const Form = () => {
           <input 
             type='number'
             name='discount'
-            className='discount'
+            className={styles.discount}
             onChange={() => {}}
           />
         </label>
@@ -71,7 +71,7 @@ const Form = () => {
           <input 
             type='text'
             name='rating'
-            className='rating'
+            className={styles.rating}
             onChange={() => {}}
           />
         </label>
@@ -80,7 +80,7 @@ const Form = () => {
           <input 
             type='text'
             name='stock'
-            className='stock'
+            className={styles.stock}
             onChange={() => {}}
           />
         </label>
@@ -89,15 +89,15 @@ const Form = () => {
           <input 
             type='text'
             name='comments'
-            className='comments'
+            className={styles.comments}
             onChange={() => {}}
           />
         </label>
 
-        <div className='toggler'>
-          <p className='toggle-text'>Get Newsletter?</p>
-          <div className='toggle-container'>
-            <input className='toggle-btn'/>
+        <div className={styles.toggler}>
+          <p className={styles.toggleText}>Get Newsletter?</p>
+          <div className={styles.togglCcontainer}>
+            <input className={styles.toggleBtn}/>
           </div>
         </div>
 

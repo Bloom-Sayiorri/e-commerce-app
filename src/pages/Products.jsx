@@ -1,4 +1,5 @@
 // import React, { useEffect, useState } from 'react'
+import styles from "../styles/products.module.css"
 
 const Products = () => {
   // const [ items, setItems ] = useState([]);
@@ -12,21 +13,21 @@ const Products = () => {
   // console.log(items);
 
   return (
-    <div className='container'>
-      <ul className='list'>
-        <li className='items'>
-          <img src='' alt='Item' className='item-img'/>
-          <h3 className='name'>{}</h3>
-          <p className='price'>$ {}</p>
-          <p className='category'>{}</p>
-          <p className='discount'>{}</p>
-          <p className='rating'>{}</p>
-          <p className='stock'>{}</p>
-          <label className='label'>
+    <div className={styles.container}>
+      <ul className={styles.list}>
+        <li className={styles.items}>
+          <img src='' alt='Item' className={styles.itemImg}/>
+          <h3 className={styles.name}>{}</h3>
+          <p className={styles.price}>$ {}</p>
+          <p className={styles.category}>{}</p>
+          <p className={styles.discount}>{}</p>
+          <p className={styles.rating}>{}</p>
+          <p className={styles.stock}>{}</p>
+          <label className={styles.label}>
             Comments:
             <textarea
               type='text'
-              className='comment'
+              className={styles.comment}
               value=''
               placeholder='Enter comments here...'
               onChange={() => {console.log('changed');}}  

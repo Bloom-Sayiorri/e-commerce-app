@@ -1,10 +1,10 @@
 import React from 'react'
-import '../styles/footer.css'
+import styles from'../styles/footer.module.css'
 
 const Footer = () => {
   return (
-    <footer className='footer'>
-        <p className='text'>&copy; E-commerce. All rights reserved.</p>
+    <footer className={styles.footer}>
+        <p className={styles.text}>&copy; E-commerce. All rights reserved.</p>
     </footer>
   )
 }
